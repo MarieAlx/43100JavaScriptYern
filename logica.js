@@ -12,7 +12,7 @@ function filtrarPorNota(nota) {
 
 
 //dato de entrada
-let notaProm = parseFloat(prompt('Ingresa el promedio de notas que deseas ver 0-para salir'));
+let notaProm = parseFloat(prompt('Ingresa la nota promedio que deseas ver:  \n7: para ver los alumnos aprobados\n (1-10): para ver los alumnos con ese promedio o mayor \n0 para salir'));
 
 while(notaProm !== 0){
     if(isNaN(notaProm) || notaProm < 0){
@@ -23,6 +23,6 @@ while(notaProm !== 0){
         console.table(alumnosFiltrados);
         
     }
-    notaProm = parseFloat(prompt('Ingresa el promedio de notas que deseas ver 0-para salir'));
+    notaProm = parseFloat(prompt('Ingresa la nota promedio que deseas ver:  \n7: para ver los alumnos aprobados\n (1-10): para ver los alumnos con ese promedio o mayor \n0 para salir'));
 }
 
